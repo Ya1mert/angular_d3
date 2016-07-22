@@ -1,0 +1,39 @@
+$grid-border-color: #a9b0b8
+$grid-line-color: #ddd
+
+.main-container
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+
+    .grid-system
+        position: relative
+        width: 100%
+        height: 100%
+
+        .svg-editor
+            width: 100%
+            height: 100%
+
+            rect.underlay
+                fill: none
+                pointer-events: all
+
+            .svg-container
+                .svg-border
+                    fill: none
+                    stroke: $grid-border-color
+                    stroke-width: 1.5
+                    pointer-events: none
+
+                .axis
+                    pointer-events: none
+
+                    line
+                        fille: none
+                        stroke-width: 1.5
+                        stroke: $grid-line-color
+                        shape-rendering: crispEdges
+                        vector-effect: non-scaling-stroke
